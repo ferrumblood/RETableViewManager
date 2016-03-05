@@ -94,7 +94,7 @@
 
 - (NSIndexPath *)indexPath
 {
-    return [NSIndexPath indexPathForRow:[self.section.items indexOfObject:self] inSection:self.section.index];
+    return [NSIndexPath indexPathForRow:[self.section.items indexOfObjectIdenticalTo:self] inSection:self.section.index];
 }
 
 #pragma mark -
