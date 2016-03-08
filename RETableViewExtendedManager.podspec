@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name        = 'RETableViewExtendedManager'
-  s.version     = '1.6'
+  s.version     = '1.6.1'
   s.authors     = { 'Unknown' => 'unknown' }
   s.homepage    = 'https://github.com/ferrumblood/RETableViewManager.git'
   s.summary     = 'Powerful data driven content manager for UITableView.'
