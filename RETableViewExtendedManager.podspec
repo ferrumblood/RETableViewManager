@@ -1,10 +1,10 @@
 Pod::Spec.new do |s|
-  s.name        = 'RETableViewManager'
+  s.name        = 'RETableViewExtendedManager'
   s.version     = '1.6'
   s.authors     = { 'Roman Efimov' => 'romefimov@gmail.com' }
-  s.homepage    = 'https://github.com/romaonthego/RETableViewManager'
+  s.homepage    = 'https://github.com/ferrumblood/RETableViewManager.git'
   s.summary     = 'Powerful data driven content manager for UITableView.'
-  s.source      = { :git => 'https://github.com/romaonthego/RETableViewManager.git',
+  s.source      = { :git => 'https://github.com/ferrumblood/RETableViewManager.git',
                     :tag => s.version.to_s }
   s.license     = { :type => "MIT", :file => "LICENSE" }
 

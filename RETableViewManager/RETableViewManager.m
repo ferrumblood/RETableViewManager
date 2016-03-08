@@ -581,6 +581,13 @@
 {
     // Forward to UITableView delegate
     //
+    RETableViewSection *section = [self.mutableSections objectAtIndex:indexPath.section];
+    RETableViewItem *item = [section.items objectAtIndex:indexPath.row];
+    
+    if (item) {
+        return item.cellEnabled;
+    }
+    
     if ([self.delegate conformsToProtocol:@protocol(UITableViewDelegate)] && [self.delegate respondsToSelector:@selector(tableView:shouldHighlightRowAtIndexPath:)])
         return [self.delegate tableView:tableView shouldHighlightRowAtIndexPath:indexPath];
     
@@ -626,8 +633,8 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     RETableViewSection *section = [self.mutableSections objectAtIndex:indexPath.section];
-    id item = [section.items objectAtIndex:indexPath.row];
-    if ([item respondsToSelector:@selector(setSelectionHandler:)]) {
+    RETableViewItem *item = [section.items objectAtIndex:indexPath.row];
+    if ([item respondsToSelector:@selector(setSelectionHandler:)] && item.cellEnabled) {
         RETableViewItem *actionItem = (RETableViewItem *)item;
         if (actionItem.selectionHandler)
             actionItem.selectionHandler(item);

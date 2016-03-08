@@ -225,7 +225,7 @@
 - (NSIndexPath *)indexPathForPreviousResponderInSectionIndex:(NSUInteger)sectionIndex
 {
     RETableViewSection *section = [self.tableViewManager.sections objectAtIndex:sectionIndex];
-    NSUInteger indexInSection =  [section isEqual:self.section] ? [section.items indexOfObject:self.item] : section.items.count;
+    NSUInteger indexInSection =  section == self.section ? [section.items indexOfObjectIdenticalTo:self.item] : section.items.count;
     for (NSInteger i = indexInSection - 1; i >= 0; i--) {
         RETableViewItem *item = [section.items objectAtIndex:i];
         if ([item isKindOfClass:[RETableViewItem class]]) {

@@ -129,7 +129,7 @@ CGFloat const RETableViewSectionFooterHeightAutomatic = DBL_MAX;
 - (NSUInteger)index
 {
     RETableViewManager *tableViewManager = self.tableViewManager;
-    return [tableViewManager.sections indexOfObject:self];
+    return [tableViewManager.sections indexOfObjectIdenticalTo:self];
 }
 
 - (CGFloat)maximumTitleWidthWithFont:(UIFont *)font

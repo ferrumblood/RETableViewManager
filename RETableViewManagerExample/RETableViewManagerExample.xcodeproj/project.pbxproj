@@ -354,7 +354,7 @@
 				ORGANIZATIONNAME = "Roman Efimov";
 				TargetAttributes = {
 					30EF93AE16E039B800B84981 = {
-						DevelopmentTeam = 28LMQ2XKWE;
+						DevelopmentTeam = LREEPRMFLX;
 					};
 				};
 			};
@@ -551,6 +551,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C93C8651600E6C213AA4EA2B /* Pods.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RETableViewManagerExample/RETableViewManagerExample-Prefix.pch";
 				GCC_WARN_UNUSED_FUNCTION = YES;
@@ -567,6 +568,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2CB8A3CB021C642AB3E6C98D /* Pods.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RETableViewManagerExample/RETableViewManagerExample-Prefix.pch";
 				GCC_WARN_UNUSED_FUNCTION = YES;

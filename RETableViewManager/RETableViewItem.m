@@ -86,6 +86,7 @@
         return nil;
     
     self.enabled = YES;
+    self.cellEnabled = YES;
     self.cellHeight = 0;
     self.selectionStyle = UITableViewCellSelectionStyleBlue;
     

@@ -42,6 +42,9 @@
                                       selectionHandler:^(RETableViewItem *item) {
             [item deselectRowAnimated:YES];
         }];
+        if (i == 1 || i == 4 || i == 5) {
+            item.cellEnabled = NO;
+        }
         [section addItem:item];
     }
     
