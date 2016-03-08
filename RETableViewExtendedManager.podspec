@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name        = 'RETableViewExtendedManager'
   s.version     = '1.6'
-  s.authors     = { 'Roman Efimov' => 'romefimov@gmail.com' }
+  s.authors     = { 'Unknown' => 'unknown' }
   s.homepage    = 'https://github.com/ferrumblood/RETableViewManager.git'
   s.summary     = 'Powerful data driven content manager for UITableView.'
   s.source      = { :git => 'https://github.com/ferrumblood/RETableViewManager.git',
@@ -10,10 +10,10 @@ Pod::Spec.new do |s|
 
   s.platform = :ios, '7.0'
   s.requires_arc = true
-  s.source_files = 'RETableViewManager/Cells', 'RETableViewManager/Items', 'RETableViewManager'
-  s.public_header_files = 'RETableViewManager/Cells/*.h', 'RETableViewManager/*.h', 'RETableViewManager/Items/*.h'
-  s.resource_bundle = { 'RETableViewManager' => 'RETableViewManager/Resources/*' }
-  s.preserve_paths = 'RETableViewManager/Resources'
+  s.source_files = 'RETableViewExtendedManager/Cells', 'RETableViewExtendedManager/Items', 'RETableViewExtendedManager'
+  s.public_header_files = 'RETableViewExtendedManager/Cells/*.h', 'RETableViewExtendedManager/*.h', 'RETableViewExtendedManager/Items/*.h'
+  s.resource_bundle = { 'RETableViewExtendedManager' => 'RETableViewExtendedManager/Resources/*' }
+  s.preserve_paths = 'RETableViewExtendedManager/Resources'
 
   s.ios.deployment_target = '7.0'
 
