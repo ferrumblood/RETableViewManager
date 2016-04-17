@@ -10,7 +10,16 @@ Pod::Spec.new do |s|
 
   s.platform = :ios, '7.0'
   s.requires_arc = true
-  s.source_files = 'RETableViewExtendedManager/Cells', 'RETableViewExtendedManager/Items', 'RETableViewExtendedManager'
+  s.source_files = 'RETableViewExtendedManager/Cells'
+
+  s.subspec 'Cells' do |ss|
+      ss.source_files = 'RETableViewExtendedManager/Cells'
+  end
+
+  s.subspec 'Items' do |ss|
+      ss.source_files = 'RETableViewExtendedManager/Items'
+  end
+
   s.public_header_files = 'RETableViewExtendedManager/Cells/*.h', 'RETableViewExtendedManager/*.h', 'RETableViewExtendedManager/Items/*.h'
   s.resource_bundle = { 'RETableViewExtendedManager' => 'RETableViewExtendedManager/Resources/*' }
   s.preserve_paths = 'RETableViewExtendedManager/Resources'
