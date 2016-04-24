@@ -196,7 +196,7 @@
         cellIdentifier = item.cellIdentifier;
     }
     
-    RETableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    RETableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
     
     void (^loadCell)(RETableViewCell *cell) = ^(RETableViewCell *cell) {
         cell.tableViewManager = self;
