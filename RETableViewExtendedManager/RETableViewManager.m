@@ -259,6 +259,9 @@
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)sectionIndex
 {
+    if ([self.delegate respondsToSelector:@selector(tableView:viewForHeaderInSection:)]) {
+        return nil;
+    }
     if (self.mutableSections.count <= sectionIndex) {
         return nil;
     }
@@ -268,6 +271,9 @@
 
 - (NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)sectionIndex
 {
+    if ([self.delegate respondsToSelector:@selector(tableView:viewForFooterInSection:)]) {
+        return nil;
+    }
     if (self.mutableSections.count <= sectionIndex) {
         return nil;
     }
